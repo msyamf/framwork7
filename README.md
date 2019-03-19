@@ -1,6 +1,6 @@
 # fremwork7
 
-###Required
+### Required
 * node.js
 * cordova / phonegap
 * Android sdk
