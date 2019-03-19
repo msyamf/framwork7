@@ -37,7 +37,7 @@ $ phonegap serve
 # dev server via phonegap with hot reload at http://localhost:8000
 $ cordova serve
 
-# dev server via Android Mobile
+# dev via Android Mobile
 $ cordova run android
 ```
 
