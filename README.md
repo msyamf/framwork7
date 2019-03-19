@@ -1,4 +1,4 @@
-# fremwork7
+# Framework7
 > Framework7 - is a free and open source framework to develop mobile, 
 > desktop or web apps with native look and feel. 
 > It is also an indispensable prototyping tool to show working app prototype as soon as possible in case you need to.
