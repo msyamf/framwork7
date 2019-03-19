@@ -34,6 +34,6 @@ $ cordova run android
 ### Build
 
 ```sh
-# dev server via Android Mobile
+# Build Android
 $ cordova build android
 ```
