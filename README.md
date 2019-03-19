@@ -3,6 +3,10 @@
 > desktop or web apps with native look and feel. 
 > It is also an indispensable prototyping tool to show working app prototype as soon as possible in case you need to.
 
+> You can use any tools you love when working with Framework7. 
+> It doesn’t force you to use anything except plain HTML, CSS and JavaScript. 
+> Creating apps with Framework7 is easy as creating website
+
 ### Required
 * node.js
 * cordova / phonegap
