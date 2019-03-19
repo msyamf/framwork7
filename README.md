@@ -9,6 +9,9 @@
 * Android sdk
 * Java sdk
 
+### Demo
+See [app-debug.apk](https://raw.githubusercontent.com/msyamf/fremwork7/master/platforms/android/app/build/outputs/apk/debug/app-debug.apk)
+
 ### Installation
 
 Install the dependencies and devDependencies and start the server.
