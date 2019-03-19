@@ -18,7 +18,7 @@ See [app-debug.apk](https://raw.githubusercontent.com/msyamf/fremwork7/master/pl
 
 ### Installation
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies.
 ```sh
 # clone the repo
 $ git clone https://github.com/msyamf/fremwork7.git
