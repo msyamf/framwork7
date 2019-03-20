@@ -14,7 +14,7 @@
 * Java sdk
 
 ### Demo
-See [app-debug.apk](https://raw.githubusercontent.com/msyamf/fremwork7/master/platforms/android/app/build/outputs/apk/debug/app-debug.apk)
+See [app-debug.apk](https://raw.githubusercontent.com/msyamf/framwork7/master/platforms/android/app/build/outputs/apk/debug/app-debug.apk)
 
 ### Installation
 
