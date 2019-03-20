@@ -21,7 +21,7 @@ See [app-debug.apk](https://raw.githubusercontent.com/msyamf/framwork7/master/pl
 Install the dependencies.
 ```sh
 # clone the repo
-$ git clone https://github.com/msyamf/fremwork7.git
+$ git clone https://github.com/msyamf/framwork7.git
 
 
 # install app's dependencies
