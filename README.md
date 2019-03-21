@@ -14,14 +14,14 @@
 * Java sdk
 
 ### Demo
-See [app-debug.apk](https://raw.githubusercontent.com/msyamf/fremwork7/master/platforms/android/app/build/outputs/apk/debug/app-debug.apk)
+See [app-debug.apk](https://raw.githubusercontent.com/msyamf/framwork7/master/platforms/android/app/build/outputs/apk/debug/app-debug.apk)
 
 ### Installation
 
 Install the dependencies.
 ```sh
 # clone the repo
-$ git clone https://github.com/msyamf/fremwork7.git
+$ git clone https://github.com/msyamf/framwork7.git
 
 
 # install app's dependencies
