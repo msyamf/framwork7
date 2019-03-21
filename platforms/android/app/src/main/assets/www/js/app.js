@@ -1,23 +1,4 @@
-
-
-
-
-
 document.addEventListener("backbutton", onBackKeyDown, false);
-
-
-// Handle the back button
-// function onBackKeyDown(url) {
-//   if(url=='/'){
-//     navigator.app.exitApp();
-//   }else{
-//     $$('[class="link back"]').click()
-//   }
-// }
-// function exit(){
-//   navigator.app.exitApp();
-// }
-
 
 function onLoad() {
   document.addEventListener("deviceready", onDeviceReady, false);
