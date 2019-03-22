@@ -14,9 +14,9 @@ $ keytool -genkey -v -keystore key.keystore -storepass passxsoft -alias testcord
 
 ## You will be asked
 
-What is your first and last name?
-What is the name of your organizational unit?
-What is the name of your organization?
-What is the name of your City or Locality?
-What is the name of your State or Province?
-What is the two-letter country code for this unit?
+> What is your first and last name?
+> What is the name of your organizational unit?
+> What is the name of your organization?
+> What is the name of your City or Locality?
+> What is the name of your State or Province?
+> What is the two-letter country code for this unit?
