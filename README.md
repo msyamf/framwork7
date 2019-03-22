@@ -50,3 +50,11 @@ $ cordova run android
 # Build Android
 $ cordova build android
 ```
+
+### Generate Keystores
+See [README.md](https://github.com/msyamf/framwork7/tree/master/keystore)
+
+### Build release
+```sh
+cordova run android --release -- --keystore=keystore/key.keystore --storePassword=passxsoft --alias=testcordovakeystore --password=passxsoft
+```
