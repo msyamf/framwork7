@@ -56,5 +56,9 @@ See [README.md](https://github.com/msyamf/framwork7/tree/master/keystore)
 
 ### Build release
 ```sh
-cordova run android --release -- --keystore=keystore/key.keystore --storePassword=passxsoft --alias=testcordovakeystore --password=passxsoft
+$ cordova run android --release -- --keystore=keystore/key.keystore --storePassword=passxsoft --alias=testcordovakeystore --password=passxsoft
+```
+### verifikasi
+```sh
+$ jarsigner -verify -verbose -certs app-release.apk
 ```
