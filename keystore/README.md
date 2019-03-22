@@ -12,7 +12,7 @@ $ keytool -genkey -v -keystore key.keystore -storepass passxsoft -alias testcord
 
 ```
 
-##You will be asked
+## You will be asked
 
 What is your first and last name?
 What is the name of your organizational unit?
