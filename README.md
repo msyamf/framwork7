@@ -31,6 +31,9 @@ $ npm install
 ### Devlopment
 
 ```sh
+# add platform android
+$ cordova platform add android
+
 # dev server via phonegap with hot reload at http://localhost:3000
 $ phonegap serve
 
