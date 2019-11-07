@@ -1,26 +1,3 @@
-document.addEventListener("backbutton", onBackKeyDown, false);
-function onLoad() {document.addEventListener("deviceready", onDeviceReady, false);}
-// Cordova is loaded and it is now safe to call Cordova methods
-
-// Register the event listener
-function onDeviceReady() {document.addEventListener("backbutton", onBackKeyDown, false);}
-
-// Handle the back button
-function onBackKeyDown() {
-  if(app.form.getFormData('page')=='/'&&app.form.getFormData('exit')==false){
-    app.form.storeFormData('exit',true)
-    app.dialog.confirm('Are you sure you want to exit?','Exit. . .', function () {
-      navigator.app.exitApp();
-    },function () {
-      app.form.storeFormData('exit',false)
-    });
-  }else{
-    app.form.storeFormData('page','/');
-    $$('[class="link back"]').click()
-  }
-}
-
-
 // Dom7
 var $$ = Dom7;
 
@@ -35,7 +12,6 @@ var app = new Framework7({
   id: 'io.framework7.testapp',
   root: '#app',
   theme: theme,
-  pushState : true,
   data: function () {
     return {
       user: {
@@ -49,21 +25,57 @@ var app = new Framework7({
       app.dialog.alert('Hello World!');
     },
   },
-  
   routes: routes,
+  popup: {
+    closeOnEscape: true,
+  },
+  sheet: {
+    closeOnEscape: true,
+  },
+  popover: {
+    closeOnEscape: true,
+  },
+  actions: {
+    closeOnEscape: true,
+  },
   vi: {
     placementId: 'pltd4o7ibb9rc653x14',
   },
-  
-});
+}); 
+//app.form.storeFormData('exit',false);  
 
-$$(document).on('page:init',function (e) {
-  app.form.storeFormData('exit',false);
-  app.form.storeFormData('page',e.detail.router.url);
-  console.log(app.form.getFormData('exit'))
-  //console.log(e.detail.router)
-})
+ 
 
-$$(document).on('page:init', '.page[data-name="p404"]', function (e) {
-  //onBackKeyDown(e.detail.router.url);
-})
+app.form.storeFormData('exit',false);
+document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("backbutton", onBackKeyDown, false);
+
+function onDeviceReady() {
+  document.addEventListener("backbutton", onBackKeyDown, false); 
+  StatusBar.overlaysWebView(false);
+  StatusBar.backgroundColorByHexString("#0039cb");
+  StatusBar.styleLightContent();
+
+}
+
+   
+
+
+// Handle the back button
+function onBackKeyDown() {
+  cekpopup = (app.popup.get()) ? app.popup.get().opened : false;
+  if(cekpopup){
+    app.popup.close();
+  }else{
+    if(app.views.main.router.currentRoute.url == "/"&&app.form.getFormData('exit')==false){
+        app.form.storeFormData('exit',true)
+        app.dialog.confirm('Yakin ingin Keluar ?','Keluar. . .', function () {
+        navigator.app.exitApp();
+      },function () {
+        app.form.storeFormData('exit',false)
+      });
+    }else{
+      app.views.main.router.back()
+    } 
+  } 
+}
